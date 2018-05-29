@@ -37,9 +37,10 @@ namespace Lab21.Controllers
             //Validation
             if (ModelState.IsValid)
             {
-                //insert newUser into the DB
+               
                 ViewBag.Message = $"Thank you for registering {newuser.FirstName}";
-                return View("confirm");
+                return View("confirm"
+                    );
             }
             else
             {
